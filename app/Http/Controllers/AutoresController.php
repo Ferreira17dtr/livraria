@@ -13,5 +13,5 @@ class AutoresController extends Controller
     	return view ('autores.index', [
     		'autores'=>$autores
     	]);
-    	}
+    }
 }

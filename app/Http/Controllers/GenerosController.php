@@ -8,9 +8,10 @@ use App\Models\Genero;
 class GenerosController extends Controller
 {
      public function index() {
-       	$livros = Livro::paginate(4);
+       	$generos = Genero::paginate(4);
 
-    	return view ('livros.index', [
-    		'livros'=>$livros
+    	return view ('generos.index', [
+    		'generos'=>$generos
     	]);
+    }
 }

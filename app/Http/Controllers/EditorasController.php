@@ -10,7 +10,8 @@ class EditorasController extends Controller
      public function index() {
        	$editoras = Editora::paginate(4);
 
-    	return view ('livros.index', [
+    	return view ('editoras.index', [
     		'editoras'=>$editoras
     	]);
+    }
 }

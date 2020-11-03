@@ -1,6 +1,6 @@
 <ul>
 @foreach($autores as $autor)
-<li>{{$autor->titulo}}</li>
+<li>{{$autor->nome}}</li>
 @endforeach
 </ul>
 {{$autores->render()}}
