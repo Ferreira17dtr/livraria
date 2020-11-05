@@ -1,6 +1,13 @@
 <ul>
 @foreach($livros as $livro)
-<li>{{$livro->titulo}}</li>
+<li>
+	<a href="{{route('livros.show', ['id'=>$livro->idl])}}">
+
+	{{$livro->titulo}}
+</a>
+</li>
+
+	
 @endforeach
 </ul>
 {{$livros->render()}}

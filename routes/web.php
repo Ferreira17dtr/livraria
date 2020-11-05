@@ -21,3 +21,12 @@ Route::get('livros', 'App\Http\Controllers\LivrosController@index')->name('livro
 Route::get('autores', 'App\Http\Controllers\AutoresController@index')->name('autores.index');
 Route::get('generos', 'App\Http\Controllers\GenerosController@index')->name('generos.index');
 Route::get('editoras', 'App\Http\Controllers\EditorasController@index')->name('editoras.index');
+
+
+Route::get('/livros/{id}/show', 'App\Http\Controllers\LivrosController@show')->name('livros.show');
+
+Route::get('/autores/{id}/show', 'App\Http\Controllers\LivrosController@show')->name('autores.show');
+
+Route::get('/generos/{id}/show', 'App\Http\Controllers\LivrosController@show')->name('generos.show');
+
+Route::get('/editoras/{id}/show', 'App\Http\Controllers\LivrosController@show')->name('editoras.show');
